@@ -18,6 +18,7 @@
 
 #include <cstdlib> // Provides EXIT_SUCCESS
 #include <iostream>
+#include <string.h>
 #include "EQGameScanner.h"
 #include "EQGamePatterns.h"
 

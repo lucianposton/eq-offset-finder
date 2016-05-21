@@ -21,7 +21,7 @@
 
 #include <iostream>
 #include <string>
-#include <windows.h> // Provides "Windows Style" Type Definitions
+#include "windows.h" // Provides "Windows Style" Type Definitions
 
 namespace MySEQOutput
 {
@@ -37,4 +37,4 @@ namespace MySEQOutput
 	}
 };
 
-#endif MYSEQOUTPUT_H
+#endif // MYSEQOUTPUT_H

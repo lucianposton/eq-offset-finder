@@ -21,7 +21,7 @@
 
 #include <iostream>
 #include <string>
-#include <windows.h> // Provides "Windows Style" Type Definitions
+#include "windows.h" // Provides "Windows Style" Type Definitions
 
 typedef void (*DisplayOffsetFunction)(std::string, DWORD);
 typedef void (*DisplaySectionNameFunction)(std::string);
@@ -40,7 +40,7 @@ namespace DefaultOutput
 	void displayOffset(std::string offsetName, DWORD offsetValue)
 	{
 		std::cout << offsetName << ":" << std::endl;
-		std::cout << "| Match Found @ " << ((offsetValue == NULL) ? "FALSE" : "TRUE") << std::endl;
+		std::cout << "| Match Found @ " << ((offsetValue == 0) ? "FALSE" : "TRUE") << std::endl;
 		std::cout << "| Offset -> 0x" << std::hex << offsetValue << std::endl;
 		std::cout << std::endl;
 	}
